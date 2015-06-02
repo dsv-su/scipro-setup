@@ -1,0 +1,30 @@
+Setup:
+
+- Language: English
+- Location: Sweden (or wherever the server physically is)
+- Locale (date formatting etc): United Kingdom
+- Keymap: Whatever corresponds to your keyboard layout, in this case swedish
+- Hostname: the name of the machine in DNS, without the domain part
+- Domain: The domain part of the machine's DNS name
+- Root password: A good password
+                 Usually at least 8 characters, 
+                 including three of: A-Z, a-z, 0-9, punctuation
+		 Should probably be generated head of time to make 
+		 sure it is known
+- User account: will be removed once installation is complete, so irrelevant
+- Partitioning: Guided - set up LVM
+  - Select disk: *NOT* the usb stick 
+                 Usually sda is the correct choice
+                 The size should make the correct choice obvious
+  - Partitioning scheme: Separate /home, /var, /tmp
+  - Remove /home
+  - Finish partitioning
+- Mirror country: Whatever is closest, in this case sweden
+- Select mirror: Whichever
+- Proxy: None
+- Package survey: Irrelevant, I usually go with yes
+- Software selection: Selections are made with *SPACE*
+  	   	      deselect desktop environment and print server
+  	   	      select ssh server
+- Install grub: yes
+- Grub device: same as system

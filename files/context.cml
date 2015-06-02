@@ -1,0 +1,13 @@
+<Resource name="jdbc/defaultDS"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="scipro"
+              password="[paste password here]"
+              validationQuery="select 1"
+              removeAbandoned="true"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost/scipro"
+              maxActive="50"
+              maxIdle="10"
+              maxWait="-1"
+              />

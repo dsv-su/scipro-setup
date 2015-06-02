@@ -1,0 +1,5 @@
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<user username="tomcat"
+      password="[paste password here]"
+      roles="manager-gui,manager-script"/>

@@ -1,0 +1,4 @@
+iface eth0 inet static
+      address [paste IP here]
+      netmask 255.255.255.0
+      gateway [paste first 3 parts of IP here].1

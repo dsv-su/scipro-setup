@@ -1,0 +1,4 @@
+JAVA_OPTS="-Djava.awt.headless=true \
+           -server \
+           -XX:+UseConcMarkSweepGC \
+           -Xmx2048m"
