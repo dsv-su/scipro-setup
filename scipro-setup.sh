@@ -61,6 +61,7 @@ nano /root/.ssh/authorized_keys
 ## you're not being prompted for a password
 ##
 logout
+ssh root@scipro-temp.dsv.su.se
 
 ##
 ## Revert your change to sshd_config
@@ -188,7 +189,8 @@ chown -R tomcat8: /var/lib/tomcat8/webapps/ROOT
 ## Install a required mysql connector
 ## (By copying from your local machine)
 ##
-scp mysql-connector-java-5.1.22.jar scipro-temp:/usr/share/tomcat8/lib/
+scp mysql-connector-java-5.1.22.jar \
+    root@scipro-temp.dsv.su.se:/usr/share/tomcat8/lib/
 
 ##
 ## Create an empty database and user
@@ -261,4 +263,4 @@ chown tomcat8: /var/log/scipro
 ## Upload the war file to the server
 ## (By copying from your local achine)
 ##
-scp ROOT.war scipro-temp.dsv.su.se:/var/lib/tomcat8/webapps/
+scp ROOT.war root@scipro-temp.dsv.su.se:/var/lib/tomcat8/webapps/
