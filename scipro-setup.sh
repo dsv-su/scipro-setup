@@ -11,6 +11,8 @@ rm -rf /home/test
 
 ##
 ## Copy the IP of the domain name to use
+## We assume the full domain name of this server 
+## is to be scipro-temp.dsv.su.se
 ##
 host scipro-temp
 
