@@ -193,6 +193,11 @@ scp mysql-connector-java-5.1.22.jar \
     root@scipro-temp.dsv.su.se:/usr/share/tomcat8/lib/
 
 ##
+## Restart tomcat to make the connector available
+##
+service tomcat8 restart
+
+##
 ## Create an empty database and user
 ##
 mysql -e "create database scipro"
